@@ -4,8 +4,11 @@ export type HeadersInput =
   | {get(name: string): string | null | undefined}
   | Readonly<Record<string, HeaderValue>>;
 
-/** A fetch `Response`, an SDK or HTTP-client error, a headers object, or anything with `headers` / `responseHeaders`. */
-export type RetryDelayInput = HeadersInput | object | null | undefined;
+/**
+ * A fetch `Response`, an SDK or HTTP-client error, a headers object, or anything with `headers` / `responseHeaders`.
+ * Typed `unknown` so a caught error can be passed as is; anything else returns `undefined`.
+ */
+export type RetryDelayInput = unknown;
 
 export interface RetryDelayOptions {
   /** Current time in milliseconds since the epoch. Defaults to `Date.now()`. */

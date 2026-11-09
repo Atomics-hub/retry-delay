@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- `retryDelay` accepts `unknown`, so TypeScript code can pass a caught error without a cast. No runtime change.
+
 ## 0.1.0
 
 First release.

@@ -1,6 +1,6 @@
 {
   "name": "retry-delay",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "How long to wait before retrying, from a 429/503 response or SDK error: Retry-After (seconds or HTTP-date), retry-after-ms, OpenAI/Anthropic/GitHub/IETF rate-limit reset headers, Gemini RetryInfo and \"try again in 6.5s\" messages. Zero dependencies.",
   "main": "./dist/index.cjs",
